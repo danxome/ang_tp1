@@ -19,3 +19,8 @@ export function FirstToAttack(pokemon: Pokemon , pokemon2: Pokemon): Pokemon{
     return pokemon.speed >= pokemon2.speed ? pokemon : pokemon2;
 }
 
+export function Attacks(pokemon: Pokemon , pokemon2: Pokemon): number{
+    pokemon2.health = pokemon2.health-pokemon.power < 0 ? 0 : pokemon2.health-pokemon.power;
+    return pokemon2.health;
+}
+

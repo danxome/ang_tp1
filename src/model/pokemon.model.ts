@@ -62,7 +62,7 @@ export class Pokemon implements IPokemon {
         this._power = props.power;
     }
 
-    attack(pokemon: Pokemon, pokemon2: Pokemon): void{
+    attacks(pokemon: Pokemon, pokemon2: Pokemon): void{
 
     }
 }
